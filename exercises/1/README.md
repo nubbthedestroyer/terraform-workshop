@@ -58,3 +58,5 @@ terraform validate
 terraform init
 ```
 
+If your "terraform init" command was successful, then you should be ready for the next exercises.  
+For now, don't run an apply.  We will get to this in a future exercise.
