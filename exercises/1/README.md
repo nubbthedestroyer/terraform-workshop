@@ -44,6 +44,11 @@ variable "region" {
 So we have these files, now what?  Well, let's try to run some commands against them
 
 ```bash
+# init is generally the first command you run after writing your config files.  It does 
+# a few things but as you might expect it initializes the working directory to prepare 
+# it to run plans and applies
+terraform init
+
 # FMT is a very simple syntax corrector that analyzes HCL in a given directory 
 # (including sub-directories) and corrects small syntactical issues.
 terraform fmt
@@ -51,11 +56,6 @@ terraform fmt
 # "validate" runs a deeper scan of config to show potential issues with more complex 
 #  problems like circular dependencies and missing values.
 terraform validate
-
-# init is generally the first command you run after writing your config files.  It does 
-# a few things but as you might expect it initializes the working directory to prepare 
-# it to run plans and applies
-terraform init
 ```
 
 If your "terraform init" command was successful, then you should be ready for the next exercises.  
