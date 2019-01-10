@@ -34,46 +34,6 @@ sudo ln -s /usr/local/bin/pip /bin
 sudo pip install --upgrade awscli
 ```
 
-## Test your AWS Credentials
-
-Your IDE comes with managed IAM credentials that match the permissions of the IAM user running the environment, 
-but because we are going to be interacting with IAM, we need to use standard credentials due to restrictions that
-AWS places on temporary credentials.  To setup the correct credentials, we need to input them into the credentials
-chain on the Cloud9 IDE.  
-
-#### Disable Managed Temporary Credentials
-
-1. In Cloud9 IDE, click on "AWS Cloud9" in the top left.  
-1. Click "Preferences"
-1. Expand the "AWS Settings" section.
-1. Click the slider button to disable "AWS managed temporary credentials"
-
-#### Setup AWS CLI credentials chain
-
-You should have received credentials from your instructor in the form of:
-1. Account ID
-1. User Name
-1. Password
-1. aws_access_key_id
-1. aws_secret_access_key
-
-We need #4 and #5 to setup the creds chain.  Run the following command in your IDE
-
-```bash
-aws configure
-```
-
-You'll be asked for the credentials.  Supply them as prompted.  For the region, enter "us-east-1"
-Once that completes, run the following commands to test to ensure that you have AWS API 
-access and your credentials chain is working.
-
-```bash
-aws ec2 describe-regions
-```
-
-If you get a string of JSON, then you should be good.  Your IAM user should have already been configured with the 
-permissions you will need for future modules.
-
 ## Install Terraform
 
 Run these commands in your cloud9 IDE terminal window to instal Terraform
