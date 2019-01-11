@@ -24,7 +24,7 @@ provider "aws" {
 }
 ```
 
-Now, lets duplicate the s3 bucket and tell it to use the other provider.  You should see the two 
+Now, lets duplicate the s3 bucket and tell it to use the other provider.
 
 next, just a Terraform apply and show.
 

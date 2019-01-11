@@ -12,3 +12,4 @@ variable "region2" {
 variable "student_name" {
   default = "student-"
 }
+
