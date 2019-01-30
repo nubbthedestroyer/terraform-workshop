@@ -1,7 +1,7 @@
 variable "list1" {
   type = "list"
   default = [
-    "val1",
+    "val12456ybvfdertyhjn",
     "val2",
     "val3"
   ]

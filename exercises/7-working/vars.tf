@@ -34,5 +34,5 @@ variable "frontend_server_text" {
 
 variable "backend_server_text" {
   description = "The text the backend should return for HTTP requests"
-  default     = "Hello from backend"
+  default     = "Hello from backend!!!!!"
 }

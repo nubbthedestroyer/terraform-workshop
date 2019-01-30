@@ -28,3 +28,9 @@ resource "aws_s3_bucket" "conditional_bucket2" {
   count = "${local.create_condition}"
   bucket_prefix = "conditional-"
 }
+
+resource "null_resource" "test_command" {
+  provisioner "local-exec" {
+    command = "echo blep"
+  }
+}

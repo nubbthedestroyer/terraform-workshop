@@ -39,3 +39,7 @@ module "backend" {
   server_text           = "${var.backend_server_text}"
   is_internal_alb       = true
 }
+
+output "test" {
+  value = "${element(split(" ", var.backend_server_text), 0)}"
+}
