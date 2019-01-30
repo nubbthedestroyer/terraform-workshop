@@ -9,6 +9,6 @@ provider "aws" {
 resource "aws_s3_bucket" "user_bucket" {
   bucket_prefix = "${var.student_name}"
   versioning {
-    enabled = true
+    enabled = false
   }
 }
